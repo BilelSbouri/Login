@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Login.MainPage">
+
+    <StackLayout VerticalOptions="Center" Margin="15">
+
+        <Label
+            Text="Administrateur"
+            Style="{StaticResource HeadingLabel}"
+            HorizontalOptions="Center"
+            FontSize="Title"
+            />
+
+        <Image
+             x:Name="Admin"
+            Aspect="AspectFit"
+            HorizontalOptions="FillAndExpand"
+            HeightRequest="150"
+            Margin="20"/>
+
+        <Entry 
+            x:Name="AdminName"
+            Placeholder="Admin Name" 
+            Keyboard="Text"/>
+
+        <Entry
+            x:Name="passwordField" 
+            Placeholder="Password " 
+            IsPassword="True" />
+
+        <Button 
+            x:Name="Loginbutton"
+            Text="log in" 
+            Margin="0,50,0,0"
+            Style="{StaticResource PrimaryButton}"
+            Clicked="Loginbutton_Clicked"/>
+
+        <Button 
+            x:Name="Regitserbtn"
+            Text="Regitser user" 
+            Margin="0,50,0,0"
+            Style="{StaticResource PrimaryButton}"
+            Clicked="Regitserbtn_Clicked"/>
+
+
+    </StackLayout>
+
+</ContentPage>
